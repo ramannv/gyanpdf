@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
         <title>GyanPDF</title>
         <style>
         
@@ -31,16 +32,17 @@
               <input type="text" class="form-control" name="sub" id="sub" placeholder="Subject"><br>
               
               <label for="content">Content</label>
-                  <textarea rows="3" cols="40" class="form-control" name="content" id="content" placeholder="Content"></textarea><br>
+              <textarea rows="3" cols="40" class="form-control" name="content" id="content" placeholder="Content"></textarea><br>
               
               
-              <button style="text-align:center" type="submit" class="btn btn-primary">Submit</button>  
+              <button id="butt" style="text-align:center" type="submit" class="btn btn-primary">Submit</button>  
          
               </div>
 
         </form>
                
         <div id="footer"> Because I'm too lazy for this shit. <span class="glyphicon glyphicon-sunglasses"></span> <a href="http://github.com/ramannv">Raman Nv</a></div>
+        
 
         </div>
         

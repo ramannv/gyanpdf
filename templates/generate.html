@@ -3,6 +3,7 @@
 <HEAD>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <META http-equiv="X-UA-Compatible" content="IE=8">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <TITLE>GyanPDF</TITLE>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
 <STYLE type="text/css">
@@ -109,9 +110,9 @@ body {margin-top: 0px;margin-left: 0px;}
 <P class="p15 ft7">Respected Ma'am,</P>
 <br>
 <div class="contents">
-<div class="sub p13 ft7">Sub: {{sub}}
+<div class="sub p13 ft7">Sub: {{sub|nl2br}}
 <br><br>
-{{content}}</div>
+{{content|nl2br}}</div>
 <br><br>
 <P class="p13 ft7">Thanking you,</P>
 <P class="p14 ft7">Gyanartha Quiz Club</P>
